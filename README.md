@@ -56,6 +56,6 @@ whether it was ever real.
 ### 📫 Connect
 
 [![Email](https://img.shields.io/badge/-zj0929@bu.edu-D14836?logo=gmail&logoColor=white)](mailto:zj0929@bu.edu)
-[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/YOUR-LINKEDIN-HANDLE)
+[![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/junzhang0929)
 
 📍 Boston, MA
