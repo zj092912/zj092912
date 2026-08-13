@@ -12,7 +12,7 @@ whether it was ever real.
 ---
 
 🔭 **Currently**
-- Intraday statistical arbitrage — optimal stopping, cointegration, and honest execution-cost accounting
+- Point-in-time data pipelines for systematic equity research — survivorship correction, as-of joins, look-ahead detection
 - Large-scale alternative data pipelines on PySpark (satellite, weather, trade, survey sources)
 - LLM-assisted labeling and RAG for financial text classification
 
@@ -22,14 +22,14 @@ whether it was ever real.
 
 | Project | What it is |
 |---|---|
-| [**wti-airline-stat-arb**](https://github.com/zj092912/wti-airline-stat-arb) | Intraday stat-arb, WTI vs. airline equities · entry/exit bands solved as a **finite-horizon optimal stopping problem** (finite-difference PDE over an OU spread) · Johansen cointegration, walk-forward |
+| [**bu-brdge-portfolio-optimization**](https://github.com/zj092912/bu-brdge-portfolio-optimization-) | Point-in-time equity research pipeline · caught a look-ahead leak that inflated a signal's information coefficient from **0.005 to 0.171 (t 11.6)** · survivorship-corrected universe replay, as-of joins on publication timestamps, permanent-security-ID keying that recovered **1.4% of silently dropped history** |
 | [**cocoa-futures-forecasting**](https://github.com/zj092912/cocoa-futures-forecasting) | 7 heterogeneous data sources (**~13.9 GB**) fused on **PySpark/MLlib** · point-in-time-correct ingestion · Model Confidence Set, Diebold-Mariano, bootstrap Sharpe CIs · Docker + 28 test modules |
 | [**mutual-fund-style-classification**](https://github.com/zj092912/mutual-fund-style-classification) | Fund style from prospectus text · **RAG cuts 2.27M → 692K tokens** · 92.9% test accuracy · the LLM audit surfaced **26 mislabeled funds** in the provided dataset |
 | [**bankruptcy-prediction**](https://github.com/zj092912/bankruptcy-prediction) | Corporate default under **3.12% class imbalance** · LogReg vs. LDA vs. GNB selected on minority-class F1, not accuracy · SMOTE without leakage, tuned decision threshold |
 
-> A note on these: two of the four report **negative results** — the cocoa signal
-> doesn't beat a coin flip, and the stat-arb strategy is profitable on mid-prices
-> but destroyed by the bid-ask spread. I lead with that rather than bury it. The
+> A note on these: several report **negative results** — the cocoa signal doesn't
+> beat a coin flip, and at BRDGE the strongest signal we had turned out to be a
+> look-ahead leak, so we killed it. I lead with that rather than bury it. The
 > methodology is the deliverable; a backtest that only looks good is worth less
 > than one you can trust.
 
