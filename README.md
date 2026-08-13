@@ -7,7 +7,7 @@ alternative data, engineering features that respect point-in-time correctness,
 fitting the model, and then stress-testing the result hard enough to find out
 whether it was ever real.
 
-🌱 **Focus:** Quant Research & Trading · Data Engineering · Machine Learning · Credit Risk
+**Focus:** Quant Research & Trading · Data Engineering · Machine Learning · Credit Risk
 
 ---
 
